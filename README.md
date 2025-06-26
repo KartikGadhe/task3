@@ -1,1 +1,8 @@
 # task3
+In SQL, the SELECT statement is used to fetch data from a table. If we want only specific columns and not all, we can write column names directly after the SELECT keyword. For example, SELECT name, email FROM customers; will give us only the name and email of all customers. To filter data and get only matching records, we use the WHERE clause. For instance, SELECT * FROM customers WHERE city = 'Pune'; shows only customers who live in Pune.
+
+If we want to get data that falls within a range, we use the BETWEEN operator. For example, SELECT * FROM products WHERE price BETWEEN 100 AND 500; shows products with prices from 100 to 500. To apply multiple conditions at the same time, we use the AND operator. For example, SELECT * FROM students WHERE class = 'BCA' AND year = 2; will display students who are in the BCA class and also in the 2nd year.
+
+Alternatively, if we want data that matches at least one of the conditions, we use the OR operator. For example, SELECT * FROM employees WHERE city = 'Delhi' OR city = 'Mumbai'; will show employees who live in either Delhi or Mumbai. To arrange the results in a sorted manner, we use the ORDER BY clause. It helps sort the records in ascending (ASC) or descending (DESC) order. For example, SELECT * FROM products ORDER BY price ASC; sorts products by price from low to high, while using DESC will show high to low.
+
+We can also sort by more than one column. For example, SELECT * FROM students ORDER BY class ASC, marks DESC; will first sort students by class name and then sort students with the same class by their marks in descending order. These SQL keywords are very useful in filtering and organizing data in databases.
